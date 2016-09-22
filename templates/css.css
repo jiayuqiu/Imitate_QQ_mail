@@ -1,0 +1,96 @@
+BODY {
+	FONT-SIZE: 12px; BACKGROUND-COLOR: #e2e5e4
+}
+.email {
+	WIDTH: 100%
+}
+.email A {
+	FONT-SIZE: 12px; COLOR: #333; TEXT-DECORATION: none
+}
+.email A:hover {
+	TEXT-DECORATION: underline
+}
+.left {
+	BORDER-RIGHT: #6a716e 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #6a716e 1px solid; PADDING-LEFT: 10px; FONT-SIZE: 12px; PADDING-BOTTOM: 10px; OVERFLOW: auto; BORDER-LEFT: #6a716e 1px solid; WIDTH: 180px; LINE-HEIGHT: 1.6; PADDING-TOP: 10px; BORDER-BOTTOM: #6a716e 1px solid; HEIGHT: 280px
+}
+.right {
+	BORDER-RIGHT: #6a716e 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #6a716e 1px solid; PADDING-LEFT: 10px; FONT-SIZE: 12px; PADDING-BOTTOM: 10px; OVERFLOW: auto; BORDER-LEFT: #6a716e 1px solid; WIDTH: 180px; LINE-HEIGHT: 1.6; PADDING-TOP: 10px; BORDER-BOTTOM: #6a716e 1px solid; HEIGHT: 280px
+}
+.info {
+	CURSOR: pointer
+}
+.groupclose {
+	CURSOR: pointer
+}
+.left .groupclose {
+	CURSOR: pointer; LINE-HEIGHT: 20px; HEIGHT: 20px
+}
+.info.left {
+	CURSOR: pointer; LINE-HEIGHT: 20px; HEIGHT: 20px
+}
+right DIV {
+	CURSOR: pointer; LINE-HEIGHT: 20px; HEIGHT: 20px
+}
+.info.lxr {
+	CURSOR: pointer; LINE-HEIGHT: 20px; HEIGHT: 20px
+}
+.groupclose.lxr {
+	CURSOR: pointer; LINE-HEIGHT: 20px; HEIGHT: 20px
+}
+.groupclose {
+	DISPLAY: block; FONT-WEIGHT: bold
+}
+.groupcloselm_ico {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BACKGROUND: url(compose0154f8.gif) no-repeat -64px -16px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 2px 1px 0px 2px; VERTICAL-ALIGN: middle; WIDTH: 14px; PADDING-TOP: 0px; HEIGHT: 12px; BORDER-RIGHT-WIDTH: 0px
+}
+.groupopenlm_ico {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BACKGROUND: url(compose0154f8.gif) no-repeat -80px -16px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 2px 1px 0px 2px; VERTICAL-ALIGN: middle; WIDTH: 14px; PADDING-TOP: 0px; HEIGHT: 12px; BORDER-RIGHT-WIDTH: 0px
+}
+#dialog A {
+	TEXT-DECORATION: none; nocheck: true
+}
+#dialog A:hover {
+	
+}
+.groupSub DIV {
+	PADDING-LEFT: 20px
+}
+.groupSub {
+	DISPLAY: none
+}
+.mov {
+	BACKGROUND: url(bot_mov0b3dfa.gif) no-repeat; FLOAT: right; WIDTH: 16px; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+.divtxt {
+	BORDER-RIGHT: #7c7c7c 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #7c7c7c 1px solid; PADDING-LEFT: 3px; FONT-SIZE: 12px; MIN-HEIGHT: 22px; PADDING-BOTTOM: 3px; OVERFLOW: auto; BORDER-LEFT: #7c7c7c 1px solid; WIDTH: 100%; CURSOR: text; LINE-HEIGHT: 20px; PADDING-TOP: 3px; BORDER-BOTTOM: #7c7c7c 1px solid; BACKGROUND-COLOR: #fff
+}
+.divtxt .one {
+	FLOAT: left; WHITE-SPACE: nowrap; HEIGHT: 20px
+}
+.divtxt .one B {
+	FONT-WEIGHT: 300
+}
+.divtxt .select.one {
+	COLOR: #fff; BACKGROUND-COLOR: #545f59
+}
+.divtxt .over.one {
+	BACKGROUND-COLOR: #cfd4d1
+}
+.divtxt INPUT {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.hd {
+	DISPLAY: none
+}
+.error {
+	COLOR: red
+}
+.lxr {
+	FONT-SIZE: 12px; MARGIN: 0px 10px; OVERFLOW: auto; LINE-HEIGHT: 20px; HEIGHT: 350px; BACKGROUND-COLOR: #fff
+}
+.lxr .tt {
+	BORDER-RIGHT: #adb1af 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #adb1af 1px solid; PADDING-LEFT: 8px; MARGIN-BOTTOM: 6px; PADDING-BOTTOM: 2px; BORDER-LEFT: #adb1af 1px solid; PADDING-TOP: 4px; BORDER-BOTTOM: #adb1af 1px solid; BACKGROUND-COLOR: #e2e5e4
+}
+#inputEmail {
+	HEIGHT: 18px
+}

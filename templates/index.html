@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <style>
+		html,body {
+			margin: 0;
+			padding: 0;
+		}
+
+		.wrapper {
+			position: relative;
+			margin: 10% auto 0;
+			width: 90%;
+			overflow: hidden;
+			border: solid 1px black;
+		}
+
+		.left-side {
+			float: left;
+			width: 65%;
+			border: solid 1px black;
+		}
+
+		label {
+			display: inline-block;
+			width: 100px;
+			vertical-align: top;
+		}
+
+		input[type='text'] {
+			width: 600px;
+		}
+
+		textarea {
+			width: 600px;
+			height: 300px;
+			resize: none;
+		}
+
+		.right-side {
+			float: right;
+			width: 30%;
+			border: solid 1px black;
+		}
+
+		li {
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+
+	<form action="/emailResult" method="post" id="mainForm">
+		<div class="wrapper">
+			<div class="left-side">
+				<div class="addrs">
+					<label for="addrs">To:</label>
+					<input type="text" name="addrs" id="addrs">
+					<input type="hidden" name="to" id="to">
+				</div>
+				<div class="subject">
+					<label for="subject">Subject:</label>
+					<input type="text" name="subject" id="subject">
+				</div>
+				<div class="content">
+					<label for="message">Message</label>
+					<textarea name="message" id="message" >{{text_str}}</textarea>
+				</div>
+				<hr />
+				<button type="submit">提交</button>
+			</div>
+			<div class="right-side">
+				<div>联系人列表</div>
+				<ul id="contactList">
+				</ul>
+			</div>
+		</div>
+		{% if error_message %}
+		<div style="color:red">{{ error_message }}</div>
+		{% endif %}
+	</form>
+</body>
+<script>
+	/* 参数设定开始 */
+	var actionUrl = '/emailResult'	//提交地址
+	var contactList = [
+		{
+			email: 'qiu',
+			name: 'sohu.321@qq.com'
+		},
+		{
+			email: 'boss',
+			name: 'foxers@qq.com'
+		},
+		{
+			email: 'cmz',
+			name: 'cmz957166401@vip.qq.com'
+		},
+		{
+			email: '小D',
+			name: 'd@d.com'
+		}
+	]	//联系人列表
+	/* 参数设定结束 */
+
+	// 加载设定内容
+	document.body.onload = function () {
+		// 提交地址赋值
+		document.getElementById('mainForm').action = actionUrl
+
+		// 联系人列表生成
+		var contactListHtml = ''
+		for (var index in contactList) {
+			contactListHtml += '<li title="'
+			contactListHtml += contactList[index].email
+			contactListHtml += '" onclick="addContact(this)">'
+			contactListHtml += contactList[index].name
+			contactListHtml += '</li>'
+		}
+		document.getElementById('contactList').innerHTML = contactListHtml
+	}
+
+	// 联系人点击事件
+	function addContact (obj) {
+		// 显示
+		var addrsVal = document.getElementById('addrs').value
+		document.getElementById('addrs').value = addrsVal + obj.innerText + '; '
+		// 实际地址
+		var toVal = document.getElementById('to').value
+		document.getElementById('to').value = toVal + obj.getAttribute('title') + '; '
+	}
+</script>
+</html>
