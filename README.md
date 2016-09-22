@@ -1,0 +1,2 @@
+# Imitate_QQ_mail
+模仿QQ邮箱中的点击联系人添加收件人功能，并利用python发送邮件
